@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+body {
+    font: 18px/1.5em Arial;
+    color: #000;
+    background: url("http://pic1.win4000.com/wallpaper/0/544b36fae2969.jpg") center center no-repeat;
+    background-size: cover;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* header */
+header {
+    height: 50px;
+    position: relative;
+} 
+header a {
+    color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+/* .demo */
+.content{
+    display: none; 
+}
+.demo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 3px 4px 5px rgba(0,0,0,0.2);
+    
+}
+.demo .demo-login,.demo-register{
+    border: 1px solid #fff;
+}
+.demo .close {
+    position: absolute;
+    top: 9px;
+    right: -13px;
+}
+.demo ul {
+    margin: 18px 148px;
+}
+.demo ul li {
+    float: left;
+    margin:5px 10px 5px 30px;
+    text-align: center;
+}
+.demo li a {
+    font-size: 20px;
+    color: #666;
+}
+.demo li a.active{
+    border-bottom: 3px solid #444;
+}
+.demo .info {
+    color: #ff0037;
+    font-size: 12px;
+    margin: 0 62px;
+  }
+.demo .username,.password {
+    border: 1px solid #ccc;
+    margin: 25px auto;
+    width:370px;
+}
+.demo span {
+    display: inline-block;
+    margin:10px 8px;
+}
+.demo .text {
+    border: none;
+    height:46px;
+    width:330px;
+}
+.demo input {
+    outline: medium;
+    padding: 5px 12px;
+}
+.demo .input-field {
+    display: inline-block;
+    background: #fff;
+    margin: 0 0 20px 60px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+}
+.login .demo-login,.demo-register {
+    transform: translate(-50%,-50%) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+  }
+ 
+.login .demo-register,.demo-login {
+
+    transform: translate(-50%,-50%) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+} 
